@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0F7FA"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- EditText to take user input -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:backgroundTint="#B2EBF2"/>
+
+    <!-- Button to update TextView -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update TextView"
+        android:backgroundTint="#00ACC1"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+    <!-- TextView to display the updated text -->
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The updated text will appear here"
+        android:gravity="top"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:backgroundTint="#B2EBF2"
+        android:padding="10dp"/>
+
+    <!-- Spacer to push buttons to the bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Horizontal LinearLayout for the color and size buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <!-- Button to change text color -->
+        <Button
+            android:id="@+id/colorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Color"
+            android:backgroundTint="#00796B"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="10dp"/>
+
+        <!-- Button to change text size -->
+        <Button
+            android:id="@+id/sizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Size"
+            android:backgroundTint="#00796B"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
